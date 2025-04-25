@@ -51,7 +51,7 @@ router.get('/', async (req, res) => {
                 },
                 printQRInTerminal: false,
                 logger: pino({ level: "fatal" }).child({ level: "fatal" }),
-                browser: Browsers.macOs("Xmd"),
+                browser: Browsers.MacOs("Xmd"),
             });
 
             if (!Smd.authState.creds.registered) {
