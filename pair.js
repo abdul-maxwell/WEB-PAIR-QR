@@ -51,7 +51,7 @@ router.get('/', async (req, res) => {
                 },
                 printQRInTerminal: false,
                 logger: pino({ level: "fatal" }).child({ level: "fatal" }),
-                browser: Browsers.macOS("Desktop"),
+                browser: Browsers.macOS("Safari"),
             });
 
             if (!Smd.authState.creds.registered) {
