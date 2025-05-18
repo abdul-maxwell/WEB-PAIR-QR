@@ -16,7 +16,6 @@ https://whatsapp.com/channel/0029VarIiQL5a24AU5ZCVV0G
 *REACH OUT*
 https://wa.me/2349133354644
 
-
 *Yᴏᴜ-ᴛᴜʙᴇ ᴛᴜᴛᴏʀɪᴀʟꜱ* 🪄 
 https://youtube.com/Mek-d1
 
@@ -51,7 +50,7 @@ router.get('/', async (req, res) => {
                 },
                 printQRInTerminal: false,
                 logger: pino({ level: "fatal" }).child({ level: "fatal" }),
-                browser: Browsers.macOS("Safari"),
+                browser: Browsers.macOS("Chrome") // Changed from Safari to Chrome
             });
 
             if (!Smd.authState.creds.registered) {
@@ -142,4 +141,3 @@ router.get('/', async (req, res) => {
 });
 
 module.exports = router;
-                    
